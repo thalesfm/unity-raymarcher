@@ -7,6 +7,8 @@
 
 This project aims to implement the ray marching algorithm for rendering within Unity by leveraging the existing lighting pipeline of the engine. The goal of this implementation is to enable real-time, photorealistic visualization of implicit surfaces defined by signed distance functions and in particular of 3D fractals, such as the Mandelbulb.
 
+(Link to presentation slides [here](Docs/slides.pdf))
+
 ## What is ray marching?
 
 Ray marching is an image based rendering technique similar to ray tracing in that both techniques render images by casting one (or several) rays through a scene to determine the color of each pixel. Unlike ray tracing, which relies on explicitly computing the intersection points of each ray with the scene, ray marching works by sampling an underlying function at multiple points along the ray. For this reason, ray marching is better suited when rendering implicit surfaces or participating media. The exact nature of this underlying function will in turn depend on the nature of the scene in question: Typically this will either be a signed distance function or encode volumetric color data.
